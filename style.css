@@ -162,7 +162,7 @@ section {
     align-items: center;
 }
 
-.section__pic-container {
+.section__pic-container-1 {
   display: flex;
   overflow: hidden;
   width: 400px; 
@@ -258,3 +258,82 @@ section {
     border: rgb(255, 255, 255) 0.1rem solid;
 }
 
+#about {
+    position: relative;
+}
+
+
+.about-containers,
+.about-details-container {
+    display: flex;
+}
+
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    text-align: center;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.about-details-container {
+  flex-direction: column;
+}
+#experience {
+    position: relative;
+}
+
+.experience-sub-title {
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    color: rgb(85, 85, 85);
+}
+
+.experience-details-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.article-container {
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;   
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+article {
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+    align-items: flex-start;
+}
+
+article .icon {
+    cursor: default;
+}
